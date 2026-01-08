@@ -425,7 +425,7 @@
         </div>
         
         <div style="text-align: center;">
-          <p style="color: var(--muted-foreground); margin-bottom: 1rem;">Based on the signature, is the message comes from the right sender or not?</p>
+          <p style="color: var(--muted-foreground); margin-bottom: 1rem;">Based on the signature, did the message come from the right sender or not?</p>
           <div class="choice-container">
             ${renderChoiceButton('authentic', 'Yes', selection, caseData.signatureValid, 'signature')}
             ${renderChoiceButton('tampered', 'No', selection, !caseData.signatureValid, 'signature')}
@@ -850,4 +850,5 @@
     
     document.addEventListener('DOMContentLoaded', function() {
       render();
+
     });
