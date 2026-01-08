@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoDetective - Educational Cryptography Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <!-- Content will be rendered by JavaScript -->
+  </div>
+
+  <!-- AI Assistant (fixed position) -->
+  <div class="ai-assistant hidden" id="ai-assistant">
+    <button class="ai-dismiss" onclick="hideAIHint()">×</button>
+    <div class="ai-content">
+      <div class="ai-avatar">🤖</div>
+      <div>
+        <div class="ai-name">
+          AI Detective
+          <span class="ai-hint-label" id="ai-hint-label">Hint</span>
+        </div>
+        <p class="ai-message" id="ai-message"></p>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Link external JS file -->
+<script src="game.js"></script> 
+</html>
